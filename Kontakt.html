@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Strona Hobby - Kontakt</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="author" content="Piotr Stępkowski">
+    <meta name="keywords" content="deftones, nu-metal, metal, rock">
+    <meta name="description" content="Strona o Deftones">
+</head>
+<body>
+    <header>
+        <h1 class="title">Deftones</h1>
+        <p class="nizej">Alternatywny metal z Sacramento</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="Dyskografia.html">Dyskografia</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Koncerty.html">Koncerty</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="audio-container">
+            <div class="tytul-muzyki">Tło muzyczne strony</div>
+            <audio class="audio-player" controls loop>
+              <source src="music/Cherrywaves.mp3" type="audio/mpeg">
+              Przeglądarka nie wspierana
+            </audio>
+        </div>
+    </header>
+    <main>
+        <div class="formularz">
+            <h2 class="form-title">Formularz kontaktowy</h2>
+            <form action="post">
+                <div class="element">
+                    <label for="name">Imię:</label>
+                    <input type="text" id="name" name="name" required placeholder="Imie">
+                </div>
+                
+                <div class="element">
+                    <label for="nazwisko">Nazwisko:</label>
+                    <input type="text" id="nazwisko" name="nazwisko" required placeholder="Nazwisko">
+                </div>
+                
+                <div class="element">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="E-mail">
+                </div>
+                
+                <div class="element">
+                    <label for="telefon">Telefon:</label>
+                    <input type="number" id="telefon" name="telefon" placeholder="Numer telefonu">
+                </div>            
+                <button type="submit" class="przycisk">Wyślij</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>Autor: Piotr Stępkowski</p>
+        <p>Kontakt: piotr.stepkowski@zse.krakow.pl</p>
+        <p>Adres: ul. Loretańska 16, 31-114 Kraków</p>
+        <p><a href="https://www.deftones.com/">Oficjalna strona Deftones</a></p>
+    </footer>
+</body>
+</html>

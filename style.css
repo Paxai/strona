@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    font-family: 'Kanit', sans-serif;
+}
+
+header{
+    background-color: #080808;
+    height: 70vh;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    height: auto;
+    padding: 100px 20px 140px 20px;
+    position: relative;
+}
+.title{
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 8px;
+    margin-bottom: 0.5rem;
+    z-index: 2;
+    color: #fff;
+    text-transform: uppercase;
+}
+.nizej{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+nav {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 10px 20px;
+}
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+
+}
+nav ul a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+main{
+    border-radius: 15px;
+    padding: 5%;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #080707bb;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+}
+main h2{
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+main h1{
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+}
+main p{
+    padding: 2%;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    font-weight: 200;
+}
+main hr{
+    width: 20%;
+    margin: 0 auto;
+}
+.wprowadzenie{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    width: 80%;
+    text-align: center;
+}
+.wprowadzenie p {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+.Historia{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    width: 80%;
+    text-align: center;
+}
+.Historia p{
+    font-weight: 300;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+.members {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    color: #fff;
+}
+
+.member.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.member-image {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.member-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.member-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 27, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.member-hover h3 {
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.member-image:hover img {
+    transform: scale(1.1);
+}
+
+.member-image:hover  {
+    opacity: 1;
+}
+.member-hover:hover{
+    opacity: 1;
+}
+
+
+.member-info {
+    flex: 2;
+}
+
+.member-info h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.member-info p {
+    text-align: left;
+    font-size: 1.3rem;
+}
+.albumy-title{
+    margin-top: 10%;
+}
+.albumy{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+}
+.albumy img{
+    min-width: 150px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+.albumy img:hover{
+    transform: scale(1.1);
+}
+.albumy p{
+    text-align: center;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+footer {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 2% 5%;
+    width: 80%;
+    background-color: #080707bb;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.albums {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.adrenaline1, .album-container {
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+}
+
+.album-cover {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+}
+
+.album-cover:hover {
+    transform: scale(1.03);
+}
+
+.album-title {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.tracklist {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(8, 7, 7, 0.95);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-align: left;
+    z-index: 10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+}
+
+.adrenaline1:hover .tracklist {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.tracklist ul {
+    padding-left: 15px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tracklist li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: "Kanit", sans-serif;
+}
+.galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.shelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.shelf img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+}
+.shelf img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+.galeria-h2{
+    margin-bottom: 2%;
+}
+.formularz {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #1b1b1b;
+}
+
+.form-title{
+    padding: 2%;
+}
+
+
+.formularz form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.element{
+    margin-bottom: 25px;
+    position: relative;
+    
+}
+
+.element label {
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.element input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+}
+.przycisk {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.przycisk:hover {
+    background-color: #2b2b2b;
+}
+
+.linia-czasu{
+    position: relative;
+    max-width: 1000px;
+    margin: 60px auto;
+}
+.linia-czasu::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #555;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 3px;
+}
+.linia-czasu-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+.linia-czasu-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #2b2b2b;
+    border: 4px solid #555;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.linia-czasu-zaw {
+    padding: 20px;
+    background-color: #222;
+    position: relative;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.linia-czasu-zaw:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.linia-czasu-data {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #555;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.timeline-city {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.timeline-venue {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+.tour-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.tour-button:hover {
+    background-color: #2b2b2b;
+}
+.lewo {
+    left: 0;
+}
+.prawo{
+    left: 50%;
+}
+.lewo::after {
+    right: -10px;
+}
+.prawo::after {
+    left: -10px;
+}
+.teledysk{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.teledysk-video{
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+.teledysk-video:hover{
+    width: 100%;
+}
+.audio-container {
+    width: 10%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f0f0f0, #e6e6e6);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: width 0.5s ease;
+}
+.audio-container:hover{
+    width: 40%;
+}
+  
+.audio-player {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    background-color: #f8f9fa;
+}
+
+.tytul-muzyki {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+    }
+
+    .nizej {
+        font-size: 1.2rem;
+    }
+
+    .member-info h3 {
+        font-size: 1.7rem;
+    }
+
+    .member-info p {
+        font-size: 1.1rem;
+    }
+    footer {
+        width: 90%;
+        gap: 1.5rem;
+        padding: 3% 4%;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    }
+
+    .nizej {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+    .shelf img {
+        max-width: 90%;
+    }
+    .albums {
+        width: 90%;
+    }
+    
+    .adrenaline1, .album-container {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        width: 92%;
+        padding: 4% 4%;
+        gap: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.95rem;
+    }
+
+
+
+
+
+    main {
+        width: 90%;
+        padding: 4%;
+    }
+
+    .wprowadzenie {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+    .Historia{
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+    .member {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    
+
+
+    .member-info {
+        width: 100%;
+    }
+    .member-image{
+        width: 100%;
+    }
+
+    .member-info p {
+        text-align: center;
+    }
+
+    .member-info h3 {
+        font-size: 1.5rem;
+    }
+    .albumy {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .albumy img {
+        width: 70%;
+        max-width: 250px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    .linia-czasu::after {
+        left: 31px;
+    }
+    .linia-czasu-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 20px;
+    }
+    .linia-czasu-item::after {
+        left: 21px;
+    }
+    .prawo {
+        left: 0;
+    }
+    .audio-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .nizej {
+        font-size: 0.9rem;
+    }
+
+    nav ul a {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .member-info p {
+        font-size: 1rem;
+    }
+
+    .member-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .member-hover h3 {
+        font-size: 1.4rem;
+    }
+    .albumy img {
+        width: 90%;
+        max-width: 200px;
+    }
+    
+    .albumy {
+        gap: 1.5rem;
+    }
+    footer {
+        width: 98%;
+        padding: 5% 3%;
+        gap: 1rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+@media print {
+    body {
+        background-color: white;
+        color: black;
+        font-family: 'Kanit', sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    main{
+        box-shadow: none;
+    }
+}
